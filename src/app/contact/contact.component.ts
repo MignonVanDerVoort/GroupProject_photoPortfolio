@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -8,8 +8,12 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class ContactComponent {
   contactForm: FormGroup = new FormGroup({
-    name: new FormControl(''),
-    email: new FormControl(''),
-    message: new FormControl(''),
+    name: new FormControl('', Validators.required),
+    email: new FormControl('', Validators.required),
+    message: new FormControl('', Validators.required),
   });
+
+  onSubmit() {
+    console.log(this.contactForm);
+  }
 }
