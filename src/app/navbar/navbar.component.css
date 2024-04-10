@@ -1,0 +1,27 @@
+.myNav{
+    backdrop-filter: blur(.2rem);
+}
+
+.myNav1, .myNav2, .myNav3, .myNav4, .myNav5{
+    border-radius: 10px 5px 10px 5px;
+}
+
+.myNav1:hover{
+    background-color: aqua;
+}
+
+.myNav2:hover{
+    background-color: blue;
+}
+
+.myNav3:hover{
+    background-color: green;
+}
+
+.myNav4:hover{
+    background-color: orange;
+}
+
+.myNav5:hover{
+    background-color: orangered;
+}
