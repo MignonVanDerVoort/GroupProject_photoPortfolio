@@ -27,9 +27,11 @@
       >
     </div>
 
-    <h4>Type Your Message Here...</h4>
     <div>
-      <textarea formControlName="message"></textarea>
+      <textarea
+        placeholder="Type Your Message Here..."
+        formControlName="message"
+      ></textarea>
       <span
         class="error"
         *ngIf="contactForm.get('message')?.errors?.['required'] && contactForm.get('message')?.touched"

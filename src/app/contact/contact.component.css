@@ -15,7 +15,8 @@
 }
 
 .container form {
-  margin-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 200px;
   width: 670px;
   height: 600px;
   display: flex;
@@ -48,7 +49,8 @@
   color: #2d455d;
 }
 
-.container form input::placeholder {
+.container form input::placeholder,
+.container form textarea::placeholder {
   color: #2d455d;
 }
 
@@ -56,14 +58,8 @@
   margin-left: 20px;
 }
 
-.container form h4 {
-  color: #2d455d;
-  font-weight: 300;
-  width: 600px;
-  margin-top: 20px;
-}
-
 .container form textarea {
+  margin-top: 20px;
   background: none;
   border: none;
   border-bottom: 2px solid #fff;
@@ -83,6 +79,7 @@
 }
 
 #button {
+  cursor: pointer;
   border: none;
   background: #fff;
   border-radius: 5px;
