@@ -14,6 +14,6 @@ export class ContactComponent {
   });
 
   onSubmit() {
-    console.log(this.contactForm);
+    console.log(this.contactForm.value);
   }
 }
