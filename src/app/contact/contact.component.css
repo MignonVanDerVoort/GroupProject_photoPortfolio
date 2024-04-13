@@ -6,7 +6,7 @@
 }
 
 .container {
-  min-height: 100vh;
+  min-height: 130vh;
   min-width: 100vw;
   display: flex;
   justify-content: center;
@@ -15,6 +15,7 @@
 }
 
 .container form {
+  margin-bottom: 100px;
   width: 670px;
   height: 600px;
   display: flex;
