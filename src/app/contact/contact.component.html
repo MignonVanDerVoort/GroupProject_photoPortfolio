@@ -1,1 +1,31 @@
-<p>contact works!</p>
+<form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+  <h2>Contact Us:</h2>
+  <hr />
+  <label> Name: <input formControlName="name" type="text" /> </label>
+  <br />
+  <span
+    *ngIf="contactForm.get('name')?.errors?.['required'] && contactForm.get('name')?.touched"
+    [style.color]="'red'"
+    >Name is required</span
+  >
+  <br />
+  <label> Email: <input formControlName="email" type="email" /> </label>
+  <br />
+  <span
+    *ngIf="contactForm.get('email')?.errors?.['required'] && contactForm.get('email')?.touched"
+    [style.color]="'red'"
+    >Email is required</span
+  >
+  <br />
+  <label>
+    Message: <textarea formControlName="message" cols="30" rows="10"></textarea>
+  </label>
+  <br />
+  <span
+    *ngIf="contactForm.get('message')?.errors?.['required'] && contactForm.get('message')?.touched"
+    [style.color]="'red'"
+    >Message is required</span
+  >
+  <br />
+  <button [disabled]="contactForm.invalid" type="submit">Send</button>
+</form>
