@@ -13,6 +13,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SocialLinksComponent } from './social-links/social-links.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { SocialLinksComponent } from './social-links/social-links.component';
     ContactComponent,
     SocialLinksComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, CarouselModule.forRoot()],
   providers: [],
   bootstrap: [AppComponent],
 })
