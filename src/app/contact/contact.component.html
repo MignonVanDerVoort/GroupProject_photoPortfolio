@@ -1,31 +1,47 @@
-<form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
-  <h2>Contact Us:</h2>
-  <hr />
-  <label> Name: <input formControlName="name" type="text" /> </label>
-  <br />
-  <span
-    *ngIf="contactForm.get('name')?.errors?.['required'] && contactForm.get('name')?.touched"
-    [style.color]="'red'"
-    >Name is required</span
-  >
-  <br />
-  <label> Email: <input formControlName="email" type="email" /> </label>
-  <br />
-  <span
-    *ngIf="contactForm.get('email')?.errors?.['required'] && contactForm.get('email')?.touched"
-    [style.color]="'red'"
-    >Email is required</span
-  >
-  <br />
-  <label>
-    Message: <textarea formControlName="message" cols="30" rows="10"></textarea>
-  </label>
-  <br />
-  <span
-    *ngIf="contactForm.get('message')?.errors?.['required'] && contactForm.get('message')?.touched"
-    [style.color]="'red'"
-    >Message is required</span
-  >
-  <br />
-  <button [disabled]="contactForm.invalid" type="submit">Send</button>
-</form>
+<div class="container">
+  <form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+    <h1>Contact Form</h1>
+
+    <div>
+      <input id="name" placeholder="Name" formControlName="name" type="text" />
+      <span
+        class="error"
+        *ngIf="contactForm.get('name')?.errors?.['required'] && contactForm.get('name')?.touched"
+        [style.color]="'red'"
+        >Name is required</span
+      >
+    </div>
+
+    <div>
+      <input
+        id="email"
+        placeholder="Email"
+        formControlName="email"
+        type="email"
+      />
+      <span
+        class="errorEmail"
+        *ngIf="contactForm.get('email')?.errors?.['required'] && contactForm.get('email')?.touched"
+        [style.color]="'red'"
+        >Email is required</span
+      >
+    </div>
+
+    <div>
+      <textarea
+        placeholder="Type Your Message Here..."
+        formControlName="message"
+      ></textarea>
+      <span
+        class="error"
+        *ngIf="contactForm.get('message')?.errors?.['required'] && contactForm.get('message')?.touched"
+        [style.color]="'red'"
+        >Message is required</span
+      >
+    </div>
+
+    <button id="button" [disabled]="contactForm.invalid" type="submit">
+      Send
+    </button>
+  </form>
+</div>
