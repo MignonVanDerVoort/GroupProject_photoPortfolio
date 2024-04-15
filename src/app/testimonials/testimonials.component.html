@@ -1,6 +1,6 @@
 <div class="myContainer">
     <div class="slider-container">
-        <div class="slider-item" *ngFor="let image of images; let i = index" [ngClass]="{
+        <div class="slider-item" *ngFor="let image of images; let i = index" ngClass="{
         'selected': i === selectedIndex,
         'prev': i === selectedIndex -1,
         'next': i === selectedIndex +1,
