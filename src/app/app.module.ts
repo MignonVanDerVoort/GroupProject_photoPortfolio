@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SocialLinksComponent } from './social-links/social-links.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { ShopGridComponent } from './home/shop-grid/shop-grid.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     TestimonialsComponent,
     ContactComponent,
     SocialLinksComponent,
+    ShopGridComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, CarouselModule.forRoot()],
   providers: [],
