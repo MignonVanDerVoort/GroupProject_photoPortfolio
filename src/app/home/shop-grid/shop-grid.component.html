@@ -1,1 +1,11 @@
-<p>shop-grid works!</p>
+<div class="shopGrid row row-gap-3 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-lg-4">
+    <div *ngFor="let print of printItems; let i = index">
+
+        <div>
+            <div class="card">
+                <img src="./assets/posters/{{print.image}}" alt="">
+            </div>
+        </div>
+
+    </div>
+</div>
