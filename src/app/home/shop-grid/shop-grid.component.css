@@ -1,5 +1,5 @@
 .shopGrid {
-    background-color: rgba(98, 103, 132, 0.688);
+    background-color: #4969807e;
 }
 
 .card {
@@ -8,8 +8,11 @@
 }
 
 .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(34, 22, 14, 0.2);
     transition: all .5s ease-in-out;
     height: 100%;
     width: 100%;
@@ -23,7 +26,5 @@
 .ovText {
     color: white;
     text-align: center;
-    top: 50;
-    left: 50;
 }
 
