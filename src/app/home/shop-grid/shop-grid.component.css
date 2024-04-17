@@ -1,7 +1,29 @@
 .shopGrid {
-    background-color: black;
+    background-color: rgba(98, 103, 132, 0.688);
 }
 
 .card {
     margin: 2rem;
+    position: relative;
 }
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .5s ease-in-out;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.ovText {
+    color: white;
+    text-align: center;
+    top: 50;
+    left: 50;
+}
+
