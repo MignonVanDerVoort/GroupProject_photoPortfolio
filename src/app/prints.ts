@@ -23,8 +23,16 @@ export const prints: iPrint[]=[
         price: 12.99,
         image: 'out-of-sight.jpg',
     },{
-        name: 'Out of Sight',
+        name: 'Money Eyes',
+        price: 17.99,
+        image: 'money-eyes.jpg',
+    },{
+        name: 'Transition',
         price: 12.99,
-        image: 'out-of-sight.jpg',
+        image: 'transition.jpg',
+    },{
+        name: 'Sunflowers',
+        price: 12.99,
+        image: 'sunflowers.jpg',
     }
 ]
