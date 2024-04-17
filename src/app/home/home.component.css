@@ -2,3 +2,9 @@ img {
     width: 100%;
     display: block;
 }
+
+.carousel-text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
