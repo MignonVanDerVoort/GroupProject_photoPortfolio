@@ -15,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SocialLinksComponent } from './social-links/social-links.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ShopGridComponent } from './home/shop-grid/shop-grid.component';
+import { NewsletterFormComponent } from './home/newsletter-form/newsletter-form.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ShopGridComponent } from './home/shop-grid/shop-grid.component';
     ContactComponent,
     SocialLinksComponent,
     ShopGridComponent,
+    NewsletterFormComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, CarouselModule.forRoot()],
   providers: [],
