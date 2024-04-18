@@ -16,6 +16,8 @@ import { SocialLinksComponent } from './social-links/social-links.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ShopGridComponent } from './home/shop-grid/shop-grid.component';
 import { NewsletterFormComponent } from './home/newsletter-form/newsletter-form.component';
+import { AwardsComponent } from './about/awards/awards.component';
+import { Testimonials2Component } from './testimonials2/testimonials2.component';
 import { LandscapeAlbumComponent } from './portfolio/landscape-album/landscape-album.component';
 import { PetAlbumComponent } from './portfolio/pet-album/pet-album.component';
 import { ArchitectureAlbumComponent } from './portfolio/architecture-album/architecture-album.component';
@@ -34,9 +36,6 @@ import { ArchitectureAlbumComponent } from './portfolio/architecture-album/archi
     SocialLinksComponent,
     ShopGridComponent,
     NewsletterFormComponent,
-    LandscapeAlbumComponent,
-    PetAlbumComponent,
-    ArchitectureAlbumComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, CarouselModule.forRoot()],
   providers: [],

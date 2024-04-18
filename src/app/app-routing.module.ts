@@ -6,6 +6,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { HeroComponent } from './hero/hero.component';
 import { AboutComponent } from './about/about.component';
+import { Testimonials2Component } from './testimonials2/testimonials2.component';
 import { PetAlbumComponent } from './portfolio/pet-album/pet-album.component';
 import { LandscapeAlbumComponent } from './portfolio/landscape-album/landscape-album.component';
 import { ArchitectureAlbumComponent } from './portfolio/architecture-album/architecture-album.component';
@@ -27,7 +28,10 @@ const routes: Routes = [
     path: 'portfolio', component: PortfolioComponent
   },
   {
-    path: 'testimonials', component: TestimonialsComponent
+    path: 'testimonials2', component: TestimonialsComponent
+  },
+  {
+    path: 'testimonials', component: Testimonials2Component
   },
   {
     path: 'hero', component: HeroComponent
@@ -45,7 +49,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
