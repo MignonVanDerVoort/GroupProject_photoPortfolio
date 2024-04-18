@@ -7,10 +7,6 @@ h1{
     color: white;
 }
 
-p{
-    height: 40px;
-} 
-
 .card:hover {
     transform: scale(1.2); 
     margin: 1rem;
