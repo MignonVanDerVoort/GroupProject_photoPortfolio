@@ -37,15 +37,14 @@ const routes: Routes = [
     path: 'hero', component: HeroComponent
   },
   {
-    path:'pet',component: PetAlbumComponent
+    path: 'pet', component: PetAlbumComponent
   },
   {
-    path:'landscape',component: LandscapeAlbumComponent
+    path: 'landscape', component: LandscapeAlbumComponent
   },
   {
-    path:'architecture',component:ArchitectureAlbumComponent
+    path: 'architecture', component: ArchitectureAlbumComponent
   }
-
 ];
 
 @NgModule({

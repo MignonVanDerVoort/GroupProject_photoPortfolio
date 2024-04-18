@@ -18,9 +18,6 @@ import { ShopGridComponent } from './home/shop-grid/shop-grid.component';
 import { NewsletterFormComponent } from './home/newsletter-form/newsletter-form.component';
 import { AwardsComponent } from './about/awards/awards.component';
 import { Testimonials2Component } from './testimonials2/testimonials2.component';
-import { LandscapeAlbumComponent } from './portfolio/landscape-album/landscape-album.component';
-import { PetAlbumComponent } from './portfolio/pet-album/pet-album.component';
-import { ArchitectureAlbumComponent } from './portfolio/architecture-album/architecture-album.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +33,8 @@ import { ArchitectureAlbumComponent } from './portfolio/architecture-album/archi
     SocialLinksComponent,
     ShopGridComponent,
     NewsletterFormComponent,
+    AwardsComponent,
+    Testimonials2Component,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, CarouselModule.forRoot()],
   providers: [],

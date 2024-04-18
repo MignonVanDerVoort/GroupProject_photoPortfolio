@@ -11,6 +11,7 @@ export class AwardsComponent implements OnInit{
 
   printAwards!: iAward[];
   awards!: iAward;
+  
 
   constructor (){}
 
