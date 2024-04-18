@@ -7,6 +7,9 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { HeroComponent } from './hero/hero.component';
 import { AboutComponent } from './about/about.component';
 import { Testimonials2Component } from './testimonials2/testimonials2.component';
+import { PetAlbumComponent } from './portfolio/pet-album/pet-album.component';
+import { LandscapeAlbumComponent } from './portfolio/landscape-album/landscape-album.component';
+import { ArchitectureAlbumComponent } from './portfolio/architecture-album/architecture-album.component';
 
 const routes: Routes = [
   {
@@ -32,6 +35,15 @@ const routes: Routes = [
   },
   {
     path: 'hero', component: HeroComponent
+  },
+  {
+    path: 'pet', component: PetAlbumComponent
+  },
+  {
+    path: 'landscape', component: LandscapeAlbumComponent
+  },
+  {
+    path: 'architecture', component: ArchitectureAlbumComponent
   }
 ];
 
