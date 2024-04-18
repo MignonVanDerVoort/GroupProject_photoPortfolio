@@ -16,6 +16,9 @@ import { SocialLinksComponent } from './social-links/social-links.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ShopGridComponent } from './home/shop-grid/shop-grid.component';
 import { NewsletterFormComponent } from './home/newsletter-form/newsletter-form.component';
+import { LandscapeAlbumComponent } from './portfolio/landscape-album/landscape-album.component';
+import { PetAlbumComponent } from './portfolio/pet-album/pet-album.component';
+import { ArchitectureAlbumComponent } from './portfolio/architecture-album/architecture-album.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,9 @@ import { NewsletterFormComponent } from './home/newsletter-form/newsletter-form.
     SocialLinksComponent,
     ShopGridComponent,
     NewsletterFormComponent,
+    LandscapeAlbumComponent,
+    PetAlbumComponent,
+    ArchitectureAlbumComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, CarouselModule.forRoot()],
   providers: [],
