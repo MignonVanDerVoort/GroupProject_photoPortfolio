@@ -1,12 +1,15 @@
 .container {
-    margin-top: 1rem;
+    margin-top: 2rem;
+   
     
 }
 
-.cardContent {
-    width: auto;
-    height: 200px;
-    align-items: center;
+h5{
+    height: 50px;
+}
+
+p{
+    height: 80px;
 }
 
 .cards:hover {
