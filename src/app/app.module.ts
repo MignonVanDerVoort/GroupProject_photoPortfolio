@@ -16,6 +16,7 @@ import { SocialLinksComponent } from './social-links/social-links.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ShopGridComponent } from './home/shop-grid/shop-grid.component';
 import { NewsletterFormComponent } from './home/newsletter-form/newsletter-form.component';
+import { AwardsComponent } from './about/awards/awards.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { NewsletterFormComponent } from './home/newsletter-form/newsletter-form.
     SocialLinksComponent,
     ShopGridComponent,
     NewsletterFormComponent,
+    AwardsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, CarouselModule.forRoot()],
   providers: [],

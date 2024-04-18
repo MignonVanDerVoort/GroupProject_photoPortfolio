@@ -1,0 +1,22 @@
+<div class="container">
+    <h1 class="text-center">AWARDS</h1>
+    <div class="row row-cols-lg-3 row-cols-sm-1 text-center">
+        <div *ngFor="let award of printAwards; let i = index">
+            <div class="cards">
+                <div class="card border-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">{{award.institution}}</div>
+                <img src="./assets/about_pics/{{award.image}}" class="card-img-top" alt="...">
+                <div class="cardContent card-body">
+                    <h5 class="card-title">{{award.name}}</h5>
+                    <hr>
+                    <p class="card-text">{{award.description}}</p>
+                </div>
+                <div class="card-footer">
+                    {{award.year}}
+                    </div>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

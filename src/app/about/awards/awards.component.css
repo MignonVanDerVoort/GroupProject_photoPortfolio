@@ -1,0 +1,15 @@
+.container {
+    margin-top: 1rem;
+    
+}
+
+.cardContent {
+    width: auto;
+    height: 200px;
+    align-items: center;
+}
+
+.cards:hover {
+
+}
+
