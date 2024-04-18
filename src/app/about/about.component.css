@@ -1,3 +1,45 @@
-.wraper {
+h1{
+    padding: 1rem;
+}
+
+.wrapper {
     display: grid;
+    grid-template-areas: stack;
+
+  }
+
+  div.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100%;
+    overflow: hidden;
+ }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .description {
+    padding: 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  img, .description {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  section:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
   }
