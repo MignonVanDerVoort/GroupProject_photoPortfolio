@@ -42,6 +42,8 @@ h1{
   section:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
+    background-color: rgb(113, 6, 65);
+    color: white;
   }
 
   .awards{
