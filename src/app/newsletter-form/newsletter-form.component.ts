@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './newsletter-form.component.css'
 })
 export class NewsletterFormComponent {
-
+  
 }

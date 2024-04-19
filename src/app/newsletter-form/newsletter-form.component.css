@@ -1,0 +1,13 @@
+.invitation-grid{
+    background-image: url(/assets/about_pics/leclerc.jpg);
+}
+
+
+.invitation-cont{
+    padding: 1rem;
+    color: black;
+    text-align: center;
+}
+input{
+    margin-right: 0.5rem;
+}
