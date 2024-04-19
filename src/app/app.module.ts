@@ -17,6 +17,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ShopGridComponent } from './home/shop-grid/shop-grid.component';
 import { AwardsComponent } from './about/awards/awards.component';
 import { Testimonials2Component } from './testimonials2/testimonials2.component';
+import { NewsletterFormComponent } from './newsletter-form/newsletter-form.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { Testimonials2Component } from './testimonials2/testimonials2.component'
     ShopGridComponent,
     AwardsComponent,
     Testimonials2Component,
+    NewsletterFormComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, CarouselModule.forRoot()],
   providers: [],

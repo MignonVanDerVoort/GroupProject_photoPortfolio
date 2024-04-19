@@ -1,3 +1,7 @@
+h3 {
+    padding-top: 0.5rem;
+}
+
 .shopGrid {
     background-color: #4969807e;
 }
@@ -12,7 +16,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    background-color: rgba(34, 22, 14, 0.2);
+    background-color: rgba(29, 55, 118, 0.2);
     transition: all .5s ease-in-out;
     height: 100%;
     width: 100%;
