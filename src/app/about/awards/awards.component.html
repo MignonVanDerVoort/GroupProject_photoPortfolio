@@ -7,15 +7,14 @@
     <div class="row row-cols-sm-1 row-cols-lg-3 text-center">
         <div *ngFor="let award of printAwards; let i = index">
             <div class="cards">
-                <div class="card border-dark mb-3">
+                <div class="card border-dark mb-3" (mouseover)="onMouseOver(i)" (mouseout)="onMouseOut(i)">
                     <div class="card-header">{{award.institution}}</div>
                     <!-- <img src="./assets/img/{{award.image}}"  class="card-img-top" alt="..."> -->
                     <!-- <img [src]="hoverImage || defaultImage"  class="card-img-top" alt="..." 
                     (mouseover)="setHoverImage(award.image)"
                     (mouseout)="resetImage()"> -->
-                    <img img src="{{ hoverStates[i] ? './assets/img/' + award.image : defaultImage }}" class="card-img-top"
-                        alt="..." (mouseover)="onMouseOver(i)"
-                        (mouseout)="onMouseOut(i)">
+                    <img img src="{{ hoverStates[i] ? './assets/img/' + award.image : defaultImage }}"
+                        class="card-img-top" alt="...">
                     <div class="cardContent card-body">
                         <h5 class="card-title">{{award.name}}</h5>
                         <hr>
