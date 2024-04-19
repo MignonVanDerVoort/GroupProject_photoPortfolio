@@ -10,6 +10,7 @@ h1{
 .card:hover {
     transform: scale(1.1); 
     margin: 1rem;
+    border-radius: 3rem;
     border-color: white;
     color: white;
     background-color: rgb(236, 182, 45);
