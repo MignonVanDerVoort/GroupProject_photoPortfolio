@@ -18,6 +18,7 @@ import { ShopGridComponent } from './home/shop-grid/shop-grid.component';
 import { AwardsComponent } from './about/awards/awards.component';
 import { Testimonials2Component } from './testimonials2/testimonials2.component';
 import { NewsletterFormComponent } from './newsletter-form/newsletter-form.component';
+import { Testimonials3Component } from './testimonials3/testimonials3.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { NewsletterFormComponent } from './newsletter-form/newsletter-form.compo
     AwardsComponent,
     Testimonials2Component,
     NewsletterFormComponent,
+    Testimonials3Component,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, CarouselModule.forRoot()],
   providers: [],

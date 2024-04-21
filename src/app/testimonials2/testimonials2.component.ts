@@ -17,3 +17,5 @@ export class Testimonials2Component implements OnInit{
   }
 
 }
+
+

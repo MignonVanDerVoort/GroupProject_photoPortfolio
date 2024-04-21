@@ -1,0 +1,39 @@
+<section id="testimonial-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="section-heading text-center">
+            <h5>SOPHIA LECLERC | PHOTOGRAPHY </h5>
+            <h2>A Word From My Customers</h2>
+            <p>Here i have some words from my customers about my work for them..</p>
+          </div>
+        </div>
+      </div>
+      <div class="testi-wrap">
+        <!-- hey Karl, this is where the loop starts, and that is where we use our method in which we pass the testimonial ID so we can find the right one with the find method -->
+
+        <!-- iv decided to add the class active or inactive according to the testimonial object, but it could be done in many ways -->
+        <div *ngFor="let testimonial of testimonials" (click)="switchActive(testimonial.id)"
+           class="client-single"
+          
+          [ngClass]="testimonial.active ? 'active position-' + testimonial.id : 'inactive position-' + testimonial.id"
+          >
+          <div class="client-img">
+            <img [src]="testimonial.image" alt="">
+          </div>
+          <div class="client-comment">
+            <h3>{{ testimonial.comment }}</h3>
+            <span><i class="fa fa-quote-left"></i></span>
+          </div>
+          <div class="client-info">
+            <!-- Stars rendering based the method in the ts file -->
+            <span *ngFor="let star of getStars(testimonial.stars)" style="font-size:300%;color:yellow;">&starf;</span>
+
+            <div>
+              <small class="text-body-secondary">{{ testimonial.reviewer }}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

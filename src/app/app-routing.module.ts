@@ -3,13 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { HeroComponent } from './hero/hero.component';
 import { AboutComponent } from './about/about.component';
-import { Testimonials2Component } from './testimonials2/testimonials2.component';
 import { PetAlbumComponent } from './portfolio/pet-album/pet-album.component';
 import { LandscapeAlbumComponent } from './portfolio/landscape-album/landscape-album.component';
 import { ArchitectureAlbumComponent } from './portfolio/architecture-album/architecture-album.component';
+import { Testimonials3Component } from './testimonials3/testimonials3.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { Testimonials2Component } from './testimonials2/testimonials2.component';
 
 const routes: Routes = [
   {
@@ -28,10 +29,13 @@ const routes: Routes = [
     path: 'portfolio', component: PortfolioComponent
   },
   {
-    path: 'testimonials2', component: TestimonialsComponent
+    path: 'testimonials', component: TestimonialsComponent
   },
   {
-    path: 'testimonials', component: Testimonials2Component
+    path: 'testimonials2', component: Testimonials2Component
+  },
+  {
+    path: 'testimonials3', component: Testimonials3Component
   },
   {
     path: 'hero', component: HeroComponent
