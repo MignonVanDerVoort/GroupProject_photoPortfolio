@@ -2,7 +2,7 @@ This was my last front-end project for Code Factory and uses Angular with HTML, 
 
 **Note: This was a group project and therefore shows many different styles and techniques.
 
-Please also note I have kept the projects exactly as they were when I first created them, not enhancing or beautifying them in any way so that progress can be seen from project 1 to project 3 and the group project. 
+**Please also note I have kept the projects exactly as they were when I first created them, not enhancing or beautifying them in any way so that progress can be seen from project 1 to project 3 and the group project.**
 
 # PhotoPortfolio
 
